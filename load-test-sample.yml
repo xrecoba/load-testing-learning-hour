@@ -1,19 +1,21 @@
 execution:
-- concurrency: 20
+- concurrency: 30
   ramp-up: 10s
-  hold-for: 20s
+  hold-for: 30s
   scenario: demo-load-test
 
 scenarios:
   demo-load-test:
-    headers:      
+    headers:
+      # User-Agent: 'Mozilla/5.0 TrovitBot (X11; Linux x86_64) AppleWebKit/537.36'
+      # think-time: gaussian(10s, 1.5s)
     requests:
-    - url: https://host.docker.internal:7192/WeatherForecast
-      label: weather
-    - url: https://host.docker.internal:7192/RandomNumber
-      label: randomNumber
-    - url: https://host.docker.internal:7192/City
-      label: city
+    - url: https://host.docker.internal:7192/HomePage
+      label: home
+    - url: https://host.docker.internal:7192/Search
+      label: search
+    - url: https://host.docker.internal:7192/Booking
+      label: booking
 
 reporting:
   - final-stats
