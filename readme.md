@@ -1,13 +1,12 @@
 # Load testing learning hour
 
 ## Connect:
-Determine the relationship between these two sets, each element on the left goes with one element on the right:  
-|-------------|----------------------------------------------------------|  
-| concurrency | the time to hold target concurrency                      |  
-| ramp-up     | the number of target concurrent virtual users            |  
-| hold-for    | limit scenario iterations number                         |  
-| iterations  | the name of scenario that is described in scenarios part |  
-| scenario    | the time to reach target concurrency                     |  
+Determine the relationship between these two sets, each element on the left goes with one element on the right:    
+``| concurrency | the time to hold target concurrency                      |``  
+``| ramp-up     | the number of target concurrent virtual users            |``  
+``| hold-for    | limit scenario iterations number                         |``  
+``| iterations  | the name of scenario that is described in scenarios part |``  
+``| scenario    | the time to reach target concurrency                     |``  
 
 ## Concepts:
 Explain:  
