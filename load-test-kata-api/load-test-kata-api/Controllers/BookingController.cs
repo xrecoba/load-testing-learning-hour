@@ -6,7 +6,7 @@ namespace load_test_kata_api.Controllers;
 [Route("[controller]")]
 public class BookingController : ControllerBase
 {
-    private int callsCount = 0;
+    private static int callsCount = 0;
     private static readonly string[] Summaries = new[]
     {
         "Rotterdam", "Girona", "Paris"
