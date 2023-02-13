@@ -1,0 +1,24 @@
+execution:
+- concurrency: 20
+  ramp-up: 10s
+  hold-for: 20s
+  scenario: demo-load-test
+
+scenarios:
+  demo-load-test:
+    headers:      
+    requests:
+    - url: https://host.docker.internal:7192/WeatherForecast
+      label: weather
+    - url: https://host.docker.internal:7192/RandomNumber
+      label: randomNumber
+    - url: https://host.docker.internal:7192/City
+      label: city
+
+reporting:
+  - final-stats
+  - console
+  - blazemeter
+  # - module: passfail
+  #   criteria:
+  #     - avg-rt > 1500 ms for 4s, stop as failed
