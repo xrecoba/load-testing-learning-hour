@@ -8,7 +8,7 @@
     "transportType": "Flight",
     "participantsGroups": [
     {
-      "room": "JUNK25LU",
+      "room": "${RoomType}",
       "participants": [
         { "birthdate": "1991-03-20"},
         { "birthdate": "1991-03-20"}
