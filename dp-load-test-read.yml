@@ -1,0 +1,54 @@
+execution:
+- concurrency: 5
+  ramp-up: 10s
+  hold-for: 10s
+  scenario: checkout
+
+scenarios:
+  checkout:  
+      
+      # User-Agent: 'Mozilla/5.0 TrovitBot (X11; Linux x86_64) AppleWebKit/537.36'
+      # think-time: gaussian(10s, 1.5s)
+
+      # - url: https://acpt-identity.api.sundiogroup.com/connect/token
+    #     method: POST
+    #     label: GetAccessToken
+    #     extract-jsonpath:
+    #       access_token:
+    #         jsonpath: $.access_token
+    #     body: 
+    #       grant_type: "client_credentials"
+    #       client_id: "Andorra_Api_client"  #TBD
+    #       scope: "api_r_service"           #TBD
+    #       client_secret: ${client_secret}  #TBD
+    requests:    
+    - url: https://acpt-checkout.api.sundiogroup.com/SZ/checkout
+      method: POST      
+      headers:        
+        Accept: application/vnd.sundiogroup.v1+json
+        Content-Type: application/json
+      body-file: body.txt            
+
+reporting:
+  - final-stats
+  - console
+  - blazemeter
+  # - module: passfail
+  #   criteria:
+  #     - avg-rt > 1500 ms for 4s, stop as failed
+
+
+
+  # body:
+      #   accommodationId: 6141216
+      #   duration: 8
+      #   deparatureDate: 2021-10-05          
+      #   OutboundTransportId: "DUS SKG#DV0A"
+      #   InboundTransportId: "SKG DUS#29O7"
+      #   mealplan: AI,
+      #   transportType: Flight,
+      #   participantsGroups: 
+      #     room: JUNK25LU
+      #     participants:            
+      #       - birthdate: 1991-03-20
+      #       - birthdate: 1991-03-20            
