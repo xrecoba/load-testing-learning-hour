@@ -1,0 +1,16 @@
+{
+    "accommodationId": 6173639,
+    "duration": 8,
+    "departureDate": "2023-03-25",
+    "mealplan": "LG",
+    "transportType": "SelfDrive",    
+    "participantsGroups": [
+    {
+      "room": "3KAG02",
+      "participants": [
+        { "birthdate": "1989-03-20"},
+        { "birthdate": "1989-03-20"}
+      ]
+    }
+  ]
+}

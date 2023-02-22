@@ -1,18 +1,17 @@
-{
-    "accommodationId": 6141216,
-    "duration": 8,
-    "departureDate": "2021-10-05",
-    "OutboundTransportId": "DUS SKG#DV0A",
-    "InboundTransportId": "SKG DUS#29O7",
-    "mealplan": "AI",
-    "transportType": "Flight",
-    "participantsGroups": [
-    {
-      "room": "${RoomType}",
-      "participants": [
-        { "birthdate": "1991-03-20"},
-        { "birthdate": "1991-03-20"}
-      ]
-    }
-  ]
+{    
+	"accommodationId": 39666,
+	"duration": 8,
+	"departureDate": "2023-03-30",
+	"mealplan": "LG",
+	"transportType": "SelfDrive",
+	"participantsGroups": 
+	[    
+		{      
+			"room": "3KA 26",
+			"participants": [
+				{ "birthdate": "1992-03-20"},
+				{ "birthdate": "1992-03-20"}
+			]
+		}  
+	]
 }

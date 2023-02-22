@@ -1,37 +1,23 @@
 execution:
-- concurrency: 5
+- concurrency: 3
   ramp-up: 10s
-  hold-for: 10s
+  hold-for: 20s
   scenario: checkout
 
 scenarios:
   checkout:
-
-      
-      # User-Agent: 'Mozilla/5.0 TrovitBot (X11; Linux x86_64) AppleWebKit/537.36'
-      # think-time: gaussian(10s, 1.5s)
-
-      # - url: https://acpt-identity.api.sundiogroup.com/connect/token
-    #     method: POST
-    #     label: GetAccessToken
-    #     extract-jsonpath:
-    #       access_token:
-    #         jsonpath: $.access_token
-    #     body: 
-    #       grant_type: "client_credentials"
-    #       client_id: "Andorra_Api_client"  #TBD
-    #       scope: "api_r_service"           #TBD
-    #       client_secret: ${client_secret}  #TBD
+    # User-Agent: 'Mozilla/5.0 TrovitBot (X11; Linux x86_64) AppleWebKit/537.36'
+    think-time: gaussian(3s, 1.5s)
     data-sources:
     - param-test.csv
 
-    requests:    
-    - url: https://acpt-checkout.api.sundiogroup.com/SZ/checkout
+    requests:        
+    - url: https://acpt-checkout.api.sundiogroup.com/KW/checkout
       method: POST      
       headers:        
         Accept: application/vnd.sundiogroup.v1+json
         Content-Type: application/json
-      body-file: body.txt            
+      body-file: body.txt             
 
 reporting:
   - final-stats
