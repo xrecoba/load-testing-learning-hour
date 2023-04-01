@@ -31,3 +31,5 @@ Sit with someone from another couple/group, and discuss:
 - Was it easy to create the test?
 - And to read the results?
 - Have you found anything interesting? If so, how?
+
+Credits: Kata created while working as Agile Tech Coach for SunwebGroup.
