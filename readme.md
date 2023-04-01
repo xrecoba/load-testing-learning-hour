@@ -32,4 +32,4 @@ Sit with someone from another couple/group, and discuss:
 - And to read the results?
 - Have you found anything interesting? If so, how?
 
-Credits: Kata created while working as Agile Tech Coach for SunwebGroup.
+Credits: Kata created while working as Agile Tech Coach for [SunwebGroup](https://www.sunwebgroup.com/).
