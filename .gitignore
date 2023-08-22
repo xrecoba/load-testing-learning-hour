@@ -34,3 +34,6 @@ msbuild.wrn
 .vs/
 /jmeter.log
 /taurus-artifacts/*.*
+
+# Blazemeter taurus
+artifacts

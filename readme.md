@@ -24,7 +24,10 @@ As of today, we have almost no traffic, but we plan to launch a marketing campai
 Can you load test our website and let us know if we will be able to support that load gracefully?  
 
 To run the test:
-`docker run -it --rm -v {current-folder}:/bzt-configs -v {current-folder}:/tmp/artifacts blazemeter/taurus load-test-sample.yml`
+* Bash - `docker run -it --rm -v $(pwd):/bzt-configs -v $(pwd)/artifacts:/tmp/artifacts blazemeter/taurus load-test-sample.yml`
+* Cmd - `docker run -it --rm -v %cd%:/bzt-configs -v %cd%/artifacts:/tmp/artifacts blazemeter/taurus load-test-sample.yml`
+docker run -it --rm -v C:\Users\xavi.ametller\personal\load-testing-learning-hour:/bzt-configs -v C:\Users\xavi.ametller\personal\load-testing-learning-hour\artifacts:/tmp/artifacts blazemeter/taurus load-test-sample.yml
+
 
 ## Conclusions
 Sit with someone from another couple/group, and discuss:
